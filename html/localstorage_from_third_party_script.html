@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+  <title>localStorage example</title>
+  <script src="https://efforg.github.io/privacybadger-test-fixtures/html/localstorage/ls_script.js"></script>
+  <script type="application/javascript">
+    function read_ls() {
+      for(var key in localStorage) {
+        console.log(key + localStorage.getItem(key));
+      }
+    }
+  </script>
+</head>
+<body onload="read_ls()">
+</html>
